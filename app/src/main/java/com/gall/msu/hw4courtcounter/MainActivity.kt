@@ -18,6 +18,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        displayForTeamA(countViewModel.scoreTeamA)
+        displayForTeamB(countViewModel.scoreTeamB)
     }
 
     /**
