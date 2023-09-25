@@ -7,7 +7,7 @@ private const val TAG = "QuizViewModel"
 const val CURRENT_SCORE_A = "CURRENT_SCORE_A"
 const val CURRENT_SCORE_B = "CURRENT_SCORE_B"
 
-class QuizViewModel(private val savedStateHandle: SavedStateHandle) : ViewModel() {
+class CountViewModel(private val savedStateHandle: SavedStateHandle) : ViewModel() {
     var scoreTeamA: Int
         get() = savedStateHandle.get(CURRENT_SCORE_A) ?: 0
         set(value) = savedStateHandle.set(CURRENT_SCORE_A, value)
